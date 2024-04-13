@@ -1,0 +1,42 @@
+/* .lightbox-gallery{background-color: #0093E9;background-image: linear-gradient(90deg, #0093E9 0%, #80D0C7 100%);background-repeat: no-repeat;color: #000;overflow-x: hidden}.lightbox-gallery p{color:#fff}.lightbox-gallery h2{font-weight:bold;margin-bottom:40px;padding-top:40px;color:#fff}@media (max-width:767px){.lightbox-gallery h2{margin-bottom:25px;padding-top:25px;font-size:24px}}.lightbox-gallery .intro{font-size:16px;max-width:500px;margin:0 auto 40px}.lightbox-gallery .intro p{margin-bottom:0}.lightbox-gallery .photos{padding-bottom:20px}.lightbox-gallery .item{padding-bottom:30px}
+img{
+    height: 200px;
+    width: 200px;
+}
+.lightbox-gallery .item {
+    display: inline;
+    padding-bottom: 53px;
+} */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+
+  .grid > div {
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0.5rem; /* You can adjust the border-radius as needed */
+  }
+  .heading{
+    display: flex;
+  }
+  .heading h1 {
+  padding-left: 50px;
+  }
+  .heading img{
+    height: 10vh;
+    width: auto;
+  }
+  body{
+    background: linear-gradient(to bottom, #b4d9f2, #edf5fa, #b4d9f2);
+
+  }
+  /* .border-black {
+    border: 2px solid black; 
+  } */

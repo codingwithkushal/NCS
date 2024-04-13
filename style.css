@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: linear-gradient(90deg, #1CB5E0 0%, #e7eaff 100%);
+  width: 100%;
+height: 100%;
+overflow-x: hidden;
+scroll-behavior: smooth;
+}
+
+body .fs-5 {
+  color: black !important;  /* Use !important to override any existing styles */
+  font-weight: bolder;
+  margin-top: 1px;
+}
+
+.column {
+  gap: 20px;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 95%;
+  display: flex;
+  flex-direction: column;
+}
+.column img{
+  height: 80%;
+}
+.nav-link{
+  font-weight: bolder;
+}
+
+#nav-toggle {
+  display: none;
+}
+header {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 3rem;
+}
+.burger-menu {
+  display: none;
+  cursor: pointer;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffd700;
+}
+ul, li {
+  font-size: larger;
+  padding-right: 0.5rem !important;
+  padding-left: 2.5rem !important;
+}
+.home{
+  height: 100vh;
+}
+.home img{
+  margin-left: 10px;
+  height: 100%;
+}
+.heading-img{
+  height: 9vh;
+  width: auto;
+}
+
+#insta{
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.fdb-box {
+  border-radius: 20px;
+  border-right: 10px solid grey;
+  border-bottom: 10px solid black;
+  margin-top: 20px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.justify-content-center{
+  gap: 20px;
+}
+strong{
+  font-size: 1.5rem;
+}
+.col:hover .card {
+  transform: scale(1.1); /* Adjust the scale factor as needed */
+  transition: transform 0.3s ease; /* Add smooth transition for the effect */
+}
+.logo i {
+  font-size: 34px;
+}
+/* footer added css  */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer h3 {
+  color: #fff;
+}
+.footer p {
+  color: #ccc;
+}
+
+.social-icons {
+  list-style: none;
+  margin-left: -80px;
+}
+
+.social-icons li {
+  display: inline-block;
+}
+
+.social-icons li a {
+  font-size: 30px;
+}
+
+/* Define the animation */
+@keyframes underline {
+  0% {
+    width: 0;
+    left: 50%;
+  }
+  50% {
+    width: 100%;
+    left: 50%;
+  }
+}
+
+/* Apply styles on hover */
+header ul li:hover a {
+  position: relative;
+}
+
+header ul li:hover a::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: rgb(72, 5, 255); /* Change this to the desired color */
+  animation: underline 2s forwards;
+}
+
+/* Remove underline from all links */
+ul.nav li a {
+  text-decoration: none;
+}
+.head-about{
+text-align: center;
+margin-top: 25px;
+}
+#about{
+  height: 100dvh;
+}
+
+@media (max-width: 1072px) {
+  html,body
+  {
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+      padding: 0px;
+      overflow-x: hidden; 
+      scroll-behavior: smooth;
+  }
+  nav ul {
+      display: none;
+  }
+
+  .burger-menu {
+    margin: 10px;
+      display: block;
+  }
+
+  /* Hide checkbox */
+  #nav-toggle {
+      display: none;
+  }
+
+  /* Show navigation when checkbox is checked */
+  #nav-toggle:checked+nav ul {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 6.5rem;
+      left: 0;
+      width: 100%;
+      background-color:#fffffff0;
+      padding: 1rem;
+  }
+
+  #nav-toggle:checked+nav ul li {
+      margin-right: 0;
+      margin-bottom: 1rem;
+  }
+  .column{
+    display: none;
+  }
+  .home{
+    height: auto;
+  }
+  .home img{
+    height: auto;
+    width: 100%;
+  }
+  .sticky {
+    background: linear-gradient(90deg, #1CB5E0 0%, #e7eaff 100%);
+    position: fixed!important;
+    width: 100%;
+    z-index: 1000;
+  }
+
+}
